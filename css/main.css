@@ -356,28 +356,4 @@ img {
   flex-grow: 1;
 }
 
-.box, .box-two {
-  margin-top: 80px;
-  width: 550px;
-  height: 550px;
-  background-image: url("../images/Bitmap.jpg");
-  background-repeat: no-repeat;
-  background-size: 445px 520px;
-}
-
-.box-two {
-  background-image: url("../images/Bitmap-coffee.jpg");
-  background-size: 445px 474px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* Load high-resolution image */
-  .box {
-    background-image: url("../images/Bitmap@2x.jpg");
-  }
-  .box-two {
-    background-image: url("../images/Bitmap-coffee@2x.jpg");
-  }
-}
-
 /*# sourceMappingURL=main.css.map */
