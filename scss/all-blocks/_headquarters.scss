@@ -1,0 +1,71 @@
+.headquarters {
+    padding-bottom: 168px;
+    &__container {
+        max-width: 1085px;
+    }
+    &__title {
+        margin-bottom: 72px;
+        color: $link-color;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 285px;
+    }
+    &__item::before {
+        content: "";
+        margin-bottom: 46px;
+        width: 41px;
+        height: 49px;
+        background-image: url("../images/Unetid-kingdom.png");
+        background-repeat: no-repeat;
+    }
+    &__item:nth-child(2)::before {
+        margin-bottom: 45px;
+        width: 52px;
+        height: 50px;
+        background-image: url("../images/Canada.png");
+    }
+    &__item:last-child::before {
+        margin-bottom: 48px;
+        width: 49px;
+        height: 44px;
+        background-image: url("../images/Australia.png");
+    }
+    &__item-title {
+        margin-bottom: 24px;
+        color: $text-color;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    &__item-link {
+        color: $text-color;
+        font-family: 'Barlow';
+        line-height: 26px;
+    }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    /* Load high-resolution image */
+    .headquarters__item::before {
+        background-image: url("../images/United-kingdom@2x.png");
+    }
+    .headquarters__item:nth-child(2)::before {
+        background-image: url("../images/Canada@2x.png");
+    }
+    .headquarters__item:last-child::before {
+        background-image: url("../images/Australia@2x.png");
+    }
+}

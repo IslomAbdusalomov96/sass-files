@@ -1,24 +1,27 @@
-.hero {
+.commitment {
     padding-bottom: 168px;
     &__container {
-        max-width: 1280px;
-        padding: 137px 85px;
-        background-image: url("../images/Coffee-about-hero.jpg");
+        padding: 90px 90px;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url("../images/Coffee-our-commitment.jpg");
         background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 10px;
+        background-position: left center;
+        background-size: 445px 520px;
     }
     &__title {
-        margin-bottom: 24px;
-        color: $main-color;
+        margin-bottom: 32px;
+        color: $text-color;
         font-size: 40px;
         line-height: 48px;
     }
     &__desc {
-        width: 445px;
-        color: $main-color;
+        width: 540px;
+        color: $text-color;
         font-family: 'Barlow';
         line-height: 26px;
+        opacity: 0.8;
     }
 }
 @media
@@ -29,7 +32,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     /* Load high-resolution image */
-    .hero__container {
-        background-image: url("../images/Coffee-about-hero@2x.jpg");
+    .commitment__container {
+        background-image: url("../images/Coffee-our-commitment@2x.jpg");
     }
 }

@@ -1,0 +1,21 @@
+.sitenav {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-left: 33px;
+    }
+    &__link {
+        color: $link-color;
+        font-family: 'Barlow';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.923px;
+        text-transform: uppercase;
+    }
+    &__link:hover {
+        color: $text-color;
+        cursor: pointer;
+    }
+}
